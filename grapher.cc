@@ -212,7 +212,7 @@ on_save_as_activate (win_info* wi)
 static void
 on_save_ok_clicked (win_info *wi)
 {
-  wi->graph_area->save_img (wi->filesel->get_filename(), "png");
+  wi->graph_area->save_img (wi->filesel->get_filename(), "png", wi->graph_area->has_grid());
   wi->filesel->hide();
 }
 

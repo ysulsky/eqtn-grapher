@@ -52,6 +52,7 @@ public:
   double         get_center_x (void) const { return center_x; }
   double         get_center_y (void) const { return center_y; }
   double         get_scale    (void) const { return scale; }
+  bool           has_grid     (void) const { return grid_active; }
   
   void toggle_grid();
   void set_null_func()
